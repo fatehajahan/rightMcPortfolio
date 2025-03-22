@@ -43,11 +43,11 @@ const Sidebar = () => {
 
     return (
         <div className='container'>
+            <img src={logo} alt="" className='md:fixed mx-auto' />
             <div className="md:flex text-white bg-transparent md:px-0 px-[30px]">
                 {/* Sidebar */}
-                <div className="md:fixed top-[140px] md:pt-0 pt-[40px]">
+                <div className="md:fixed md:top-[200px] md:pt-0 pt-[30px]">
                     <div>
-                        <img src={logo} alt="" className='md:mx-0 mx-auto' />
                         <p className='md:text-[20px] text-[15px] md:pt-[5px]'>Front End Engineer</p>
                         <p className='text-[16px] pt-[5px] w-[300px] text-[#94a3b8]'>I build accessible, pixel-perfect digital experiences for the web.</p>
                         <ul className="space-y-3 pt-[30px] md:inline-block hidden">
