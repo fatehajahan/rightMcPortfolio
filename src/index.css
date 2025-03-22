@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+    --font-Montserrat: Montserrat, sans-serif;
+}
+
+@utility container {
+    padding-inline: 10px;
+    margin-inline: auto;
+    center : true;
+
+    @variant sm {
+        padding-inline: 20px;
+    }
+
+    @variant lg {
+        padding-inline: 80px;
+    }
+
+    @variant xl {
+        padding-inline: 120px;
+    }
+}
