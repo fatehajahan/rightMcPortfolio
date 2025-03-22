@@ -66,17 +66,17 @@ const Archives = () => {
                         <tbody>
                             {projects.map((project, index) => (
                                 <tr key={index} className="border-t border-gray-700 hover:bg-gray-800 transition">
-                                    <td className="py-4 pr-[25px]">{project.year}</td>
-                                    <td className="py-4 font-semibold">{project.name}</td>
-                                    <td className="py-4 pr-[25px] hidden md:table-cell">{project.madeAt}</td>
-                                    <td className="py-4 flex-wrap gap-2 hidden md:table-cell">
+                                    <td className="py-[25px] pr-[25px]">{project.year}</td>
+                                    <td className="py-[25px] font-semibold">{project.name}</td>
+                                    <td className="py-[25px] pr-[25px] hidden md:table-cell">{project.madeAt}</td>
+                                    <td className="py-[25px] flex-wrap gap-2 hidden md:table-cell">
                                         {project.builtWith.map((tech, i) => (
                                             <span key={i} className="bg-[#124e58] text-teal-300 px-3 py-1 text-sm rounded-full">
                                                 {tech}
                                             </span>
                                         ))}
                                     </td>
-                                    <td className="py-4 hidden md:table-cell">
+                                    <td className="py-[25px] hidden md:table-cell">
                                         <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition">
                                             {project.link.replace("https://", "")} ↗
                                         </a>
