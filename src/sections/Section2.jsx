@@ -5,7 +5,7 @@ import resume from '../assets/projects/cv_musleh.pdf'
 const Section2 = () => {
     return (
         <div className='bg-transparent md:mb-[400px] '>
-            <p className='text-[20px] pb-[15px] md:hidden inline-block'>About</p>
+            <p className='text-[20px] pb-[15px] md:hidden inline-block'>Experience</p>
             <div className="text-[16px] font-regular leading-6 text-[#708099] flex flex-col gap-y-[50px]">
                 <div className="md:flex hover:bg-[#39476993] transition duration-500 ease-in-out py-[20px] px-[20px] rounded-3xl">
                     <div className='md:w-[20%]'>2024-Current</div>

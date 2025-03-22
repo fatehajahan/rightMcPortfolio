@@ -43,7 +43,7 @@ const Archives = () => {
 
 
     return (
-        <div className='text-white py-[150px]'>
+        <div className='text-white md:py-[150px] py-[100px] px-[30px]'>
             <div className="container">
                 <Link to="/"><p className='transition-transform duration-500 ease-in-out transform translate-x-0 hover:translate-x-[60px] hover:text-[#53cdbc]'>Back to rightMc HomePage</p></Link>
                 <h1 className='text-[48px] font-bold font-Montserrat'>All Projects</h1>
@@ -56,9 +56,9 @@ const Archives = () => {
                             <tr className="text-left text-gray-400">
                                 <th className="pb-4">Year</th>
                                 <th className="pb-4">Project</th>
-                                <th className="pb-4">Made at</th>
-                                <th className="pb-4">Built with</th>
-                                <th className="pb-4">Link</th>
+                                <th className="pb-4 hidden md:table-cell">Made at</th>
+                                <th className="pb-4 hidden md:table-cell">Built with</th>
+                                <th className="pb-4 hidden md:table-cell">Link</th>
                             </tr>
                         </thead>
 
@@ -68,15 +68,15 @@ const Archives = () => {
                                 <tr key={index} className="border-t border-gray-700 hover:bg-gray-800 transition">
                                     <td className="py-4 pr-[25px]">{project.year}</td>
                                     <td className="py-4 font-semibold">{project.name}</td>
-                                    <td className="py-4 pr-[25px]">{project.madeAt}</td>
-                                    <td className="py-4 flex flex-wrap gap-2">
+                                    <td className="py-4 pr-[25px] hidden md:table-cell">{project.madeAt}</td>
+                                    <td className="py-4 flex-wrap gap-2 hidden md:table-cell">
                                         {project.builtWith.map((tech, i) => (
                                             <span key={i} className="bg-[#124e58] text-teal-300 px-3 py-1 text-sm rounded-full">
                                                 {tech}
                                             </span>
                                         ))}
                                     </td>
-                                    <td className="py-4">
+                                    <td className="py-4 hidden md:table-cell">
                                         <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition">
                                             {project.link.replace("https://", "")} ↗
                                         </a>

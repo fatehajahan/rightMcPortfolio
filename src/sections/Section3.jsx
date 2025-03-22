@@ -9,6 +9,8 @@ import { Link } from 'react-router-dom'
 const Section3 = () => {
     return (
         <div className='bg-transparent pb-[150px]'>
+            <p className='text-[20px] pb-[15px] md:hidden inline-block'>Projects</p>
+            
             <div className="text-[16px] font-regular leading-6 text-[#708099] flex flex-col gap-y-[50px]">
                 <div className='group md:flex gap-x-[30px] hover:bg-[#39476993] transition duration-500 ease-in-out py-[20px] px-[20px] rounded-3xl'>
                     <div className=""><img src={project1} alt="" className='md:w-[200px]' /></div>
@@ -18,10 +20,9 @@ const Section3 = () => {
                     </div>
                 </div>
 
-
                 <div className='group hover:bg-[#39476993] transition duration-500 ease-in-out py-[20px] px-[20px] rounded-3xl'>
                     <div className='md:flex gap-x-[30px] '>
-                        <div className=""><img src={project2} alt="" className='md:w-[200px]' /></div>
+                        <div className=""><img src={project2} alt="" className='md:w-[200px] mx-auto' /></div>
                         <div className="md:w-[70%]">
                             <p className='head text-[20px] pb-[15px] group-hover:text-[#53cdbc] transition md:pt-0 pt-[20px]'>Build a Spotify Connected</p>
                             <p>Video course that teaches how to build a web app with the Spotify Web API. Topics covered include the principles of REST APIs, user auth flows, Node, Express, React, Styled Components, and more.</p>
@@ -38,7 +39,7 @@ const Section3 = () => {
 
                 <div className='group hover:bg-[#39476993] transition duration-500 ease-in-out py-[20px] px-[20px] rounded-3xl'>
                     <div className=' md:flex gap-x-[30px]'>
-                        <div className=""><img src={project3} alt="" className='md:w-[200px]' /></div>
+                        <div className=""><img src={project3} alt="" className='md:w-[200px] mx-auto' /></div>
                         <div className="md:w-[70%]">
                             <p className='head text-[20px] pb-[15px] group-hover:text-[#53cdbc] transition md:pt-0 pt-[20px]'>Build a Spotify Connected</p>
                             <p>Video course that teaches how to build a web app with the Spotify Web API. Topics covered include the principles of REST APIs, user auth flows, Node, Express, React, Styled Components, and more.</p>
@@ -52,7 +53,7 @@ const Section3 = () => {
 
 
                 <div className='group md:flex gap-x-[30px] hover:bg-[#39476993] transition duration-500 ease-in-out py-[20px] px-[20px] rounded-3xl'>
-                    <div className=""><img src={project4} alt="" className='md:w-[200px]' /></div>
+                    <div className=""><img src={project4} alt="" className='md:w-[200px] mx-auto' /></div>
                     <div className="md:w-[70%]">
                         <p className='head text-[20px] pb-[15px] group-hover:text-[#53cdbc] transition md:pt-0 pt-[20px]'>Build a Spotify Connected</p>
                         <p>Video course that teaches how to build a web app with the Spotify Web API. Topics covered include the principles of REST APIs, user auth flows, Node, Express, React, Styled Components, and more.</p>
