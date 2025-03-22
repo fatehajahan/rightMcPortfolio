@@ -43,7 +43,7 @@ const Sidebar = () => {
 
     return (
         <div className='container'>
-            <img src={logo} alt="" className='md:fixed mx-auto' />
+            <img src={logo} alt="" className='md:fixed mx-auto md:w-[300px] w-[200px]' />
             <div className="md:flex text-white bg-transparent md:px-0 px-[30px]">
                 {/* Sidebar */}
                 <div className="md:fixed md:top-[200px] md:pt-0 pt-[30px]">
